@@ -20,11 +20,11 @@
 	    return Math.floor(Math.random() * (max - min + 1) + min);
     };
 
-    let i = '#ffffff';
+    let i = '#000000';
     const changeBk = async (ms: number) => {
-        i = '#ff0000';
+        i = '#ffffff';
         await sleep(ms);
-        i = '#ffffff'
+        i = '#000000'
     }
 
     setInterval(async () => {
