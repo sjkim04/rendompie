@@ -49,7 +49,7 @@
         await morse('long');
         await morse('short');
         await sleep(750);
-    }, 3000);
+    }, 15000);
 </script>
 
 <div class="container" style="--bkcolor: {i};">
