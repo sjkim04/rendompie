@@ -26,6 +26,35 @@
         await sleep(ms);
         i = '#000000'
     }
+    (async () => {
+        await morse('long');
+        await morse('short');
+        await morse('short');
+        await morse('long');
+        await morse('short');
+        await sleep(750);
+
+        await morse('short');
+        await morse('short');
+        await morse('short');
+        await morse('short');
+        await sleep(750);
+
+        await morse('short');
+        await sleep(750);
+
+        await morse('short');
+        await morse('long');
+        await morse('short');
+        await morse('short');
+        await sleep(750);
+
+        await morse('short');
+        await morse('long');
+        await morse('long');
+        await morse('short');
+        await sleep(750);
+    })();
 
     setInterval(async () => {
         await morse('long');
@@ -46,10 +75,16 @@
 
         await morse('short');
         await morse('long');
+        await morse('short');
+        await morse('short');
+        await sleep(750);
+
+        await morse('short');
+        await morse('long');
         await morse('long');
         await morse('short');
         await sleep(750);
-    }, 15000);
+    }, 18000);
 </script>
 
 <div class="container" style="--bkcolor: {i};">
